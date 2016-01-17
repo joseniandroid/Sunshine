@@ -22,6 +22,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import com.example.android.sunshine.R;
 
@@ -72,5 +73,8 @@ public class MainFragment extends Fragment {
                 R.id.tvListItemForecast,     // The ID of the textview to populate.
                 weekForecast);
 
+        // Get a referece to the ListView and attach the adapter to it.
+        ListView listView = (ListView) view.findViewById(R.id.listView_forecast);
+        listView.setAdapter(mForecastAdapter);
     }
 }
