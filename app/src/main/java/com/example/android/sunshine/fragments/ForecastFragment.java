@@ -40,12 +40,12 @@ import java.util.List;
 /**
  * A placeholder fragment containing a simple view for the MainActivity.
  */
-public class MainFragment extends Fragment {
+public class ForecastFragment extends Fragment {
 
     private ArrayAdapter<String> mForecastAdapter;
 
-    public static MainFragment newInstance() {
-        return new MainFragment();
+    public static ForecastFragment newInstance() {
+        return new ForecastFragment();
     }
 
     @Override
