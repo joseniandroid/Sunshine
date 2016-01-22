@@ -4,6 +4,7 @@
     <!-- Menu Item Labels -->
     <string name="action_settings">Settings</string>
     <string name="action_refresh" translatable="false">Refresh</string>
+    <string name="action_map">Map Location</string>
 
     <!-- Activity Screen Titles -->
     <string name="title_activity_detail">Details</string>
