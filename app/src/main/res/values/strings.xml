@@ -1,7 +1,16 @@
 <resources>
     <string name="app_name">Sunshine</string>
+
+    <!-- Menu Item Labels -->
     <string name="action_settings">Settings</string>
     <string name="action_refresh" translatable="false">Refresh</string>
+
+    <!-- Activity Screen Titles -->
     <string name="title_activity_detail">Details</string>
     <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Keys, Labels, Defaults, etc. -->
+    <string name="pref_location_label">Location</string>
+    <string name="pref_location_key" translatable="false">location</string>
+    <string name="pref_location_default" translatable="false">Cebu</string>
 </resources>
