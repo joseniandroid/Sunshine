@@ -28,8 +28,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.example.android.sunshine.BuildConfig;
 import com.example.android.sunshine.R;
@@ -121,6 +123,13 @@ public class ForecastFragment extends Fragment {
         // Get a referece to the ListView and attach the adapter to it.
         ListView listView = (ListView) view.findViewById(R.id.listView_forecast);
         listView.setAdapter(mForecastAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String forecast = mForecastAdapter.getItem(position);
+                Toast.makeText(getActivity(), forecast, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     public class FetchWeatherTask extends AsyncTask<String, Void, String[]> {
